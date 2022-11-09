@@ -18,7 +18,7 @@ namespace DigitTranslator
             return result;
         }
 
-        internal int[][] ConvertArray(int[] a, int columns)//Преобразуем одномерный массив в зубчатый
+        internal int[][] ConvertArray(int[] a, int columns)//Преобразуем одномерный массив в массив массивов
         {
             int rows = a.Length / columns;
             if (a.Length % columns > 0)

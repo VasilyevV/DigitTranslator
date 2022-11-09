@@ -8,8 +8,8 @@ class Consumer
 
         for (int i = 0; i < 10; i++)
         {
-            long Number = rnd.Next(0, 999999999);//Random накладывает ограничения Int32, поэтому здесь в качестве max 9-значное число,
-            var muster = new Translator();// но реализованный класс позваляет переводить до 12-значных значений (999 млрд) включительно
+            long Number = rnd.NextInt64(0, 999999999999);
+            var muster = new Translator();
             var a = muster.Compilation(Number);
             Console.WriteLine(Number);
             Console.WriteLine(a);
